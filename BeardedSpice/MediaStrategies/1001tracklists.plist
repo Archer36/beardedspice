@@ -1,0 +1,24 @@
+//
+//  1001tracklists.plist
+//  BeardedSpice
+//
+//  Created by Brett Barton on 07 JUN 2018.
+//
+BSStrategy = {
+  version: 1,
+  displayName: "1001tracklists.com",
+  accepts: {
+    method: "predicateOnTab",
+    format: "%K LIKE[c] '*1001tracklists.com/tracklist*'",
+    args: ["URL"]
+  },
+  isPlaying: function () { },
+  toggle: function () { document.querySelector('#playerWidgetPause').click(); },
+  previous: function () { },
+  next: function () { },
+  pause: function () { },
+  trackInfo: function () {
+    return {
+    };
+  }
+}
